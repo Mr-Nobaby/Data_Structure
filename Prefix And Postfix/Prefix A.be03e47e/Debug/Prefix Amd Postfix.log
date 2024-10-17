@@ -1,0 +1,4 @@
+﻿  stack.cpp
+C:\Users\Administrator\Desktop\data structure code\Prefix And Postfix\src\stack.cpp(9,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\Administrator\Desktop\data structure code\Prefix And Postfix\src\stack.cpp(37,1): warning C4715: “PerformOperation”: 不是所有的控件路径都返回值
+  Prefix Amd Postfix.vcxproj -> C:\Users\Administrator\Desktop\data structure code\Prefix And Postfix\Debug\Prefix And Postfix.exe

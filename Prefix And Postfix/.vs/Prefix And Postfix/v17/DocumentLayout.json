@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE03E47E-64F9-4489-B73E-A398ED1C3977}|Prefix Amd Postfix.vcxproj|C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\stack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE03E47E-64F9-4489-B73E-A398ED1C3977}|Prefix Amd Postfix.vcxproj|solutionrelative:src\\stack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE03E47E-64F9-4489-B73E-A398ED1C3977}|Prefix Amd Postfix.vcxproj|C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE03E47E-64F9-4489-B73E-A398ED1C3977}|Prefix Amd Postfix.vcxproj|solutionrelative:src\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE03E47E-64F9-4489-B73E-A398ED1C3977}|Prefix Amd Postfix.vcxproj|C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE03E47E-64F9-4489-B73E-A398ED1C3977}|Prefix Amd Postfix.vcxproj|solutionrelative:src\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 202,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\test.cpp",
+              "RelativeDocumentMoniker": "src\\test.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\test.cpp",
+              "RelativeToolTip": "src\\test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-17T02:52:31.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "stack.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\stack.cpp",
+              "RelativeDocumentMoniker": "src\\stack.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\stack.cpp",
+              "RelativeToolTip": "src\\stack.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-17T02:28:57.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stack.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\stack.h",
+              "RelativeDocumentMoniker": "src\\stack.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\data structure code\\Prefix And Postfix\\src\\stack.h",
+              "RelativeToolTip": "src\\stack.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-17T02:26:29.714Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
