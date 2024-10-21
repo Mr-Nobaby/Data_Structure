@@ -53,10 +53,10 @@ public:
 	}
 };
 
-int main()
-{
-	Queue Q; 
-	Q.Push(1);
-	Q.Push(2);
-	Q.Print();
-}
+//int main()
+//{
+//	Queue Q; 
+//	Q.Push(1);
+//	Q.Push(2);
+//	Q.Print();
+//}

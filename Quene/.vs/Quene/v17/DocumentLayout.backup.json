@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_CircularArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|solutionrelative:src\\Queue_CircularArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_LinkList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|solutionrelative:src\\Queue_LinkList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|solutionrelative:src\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_LinkList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACDB6372-6E1C-40F3-ABD8-A86E528CB7DB}|Quene.vcxproj|solutionrelative:src\\Queue_LinkList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,28 +34,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Queue_LinkList.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_LinkList.h",
+              "RelativeDocumentMoniker": "src\\Queue_LinkList.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_LinkList.h",
+              "RelativeToolTip": "src\\Queue_LinkList.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-21T03:42:40.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Queue_LinkList.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_LinkList.cpp",
+              "RelativeDocumentMoniker": "src\\Queue_LinkList.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_LinkList.cpp*",
+              "RelativeToolTip": "src\\Queue_LinkList.cpp*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-21T03:38:01.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "test.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\test.cpp",
               "RelativeDocumentMoniker": "src\\test.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\test.cpp",
               "RelativeToolTip": "src\\test.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-18T10:57:02.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Queue_CircularArray.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_CircularArray.cpp",
-              "RelativeDocumentMoniker": "src\\Queue_CircularArray.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\data structure code\\Quene\\src\\Queue_CircularArray.cpp*",
-              "RelativeToolTip": "src\\Queue_CircularArray.cpp*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-18T08:27:26.745Z",
               "EditorCaption": ""
             }
           ]
