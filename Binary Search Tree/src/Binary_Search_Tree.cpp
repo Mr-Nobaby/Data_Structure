@@ -70,3 +70,71 @@ bool NodeSearch(BstNode*& root, int x)
 	else if (x <= root->data) return NodeSearch(root->left, x);
 	else return NodeSearch(root->right, x);
 }
+
+int FindMin(BstNode*& root)
+{
+	BstNode* current = root;
+	if (IsEmpty(root))
+	{
+		printf("Tree is empty!\n");
+		return -1;
+	}
+	else if (current->left == NULL)
+	{
+		return current->data;
+	}
+	return FindMin(current->left);
+}
+
+int FindMax(BstNode*& root)
+{
+	BstNode* current = root;
+	if (IsEmpty(root))
+	{
+		printf("Tree is empty!\n");
+		return -1;
+	}
+	else if (current->right == NULL)
+	{
+		return current->data;
+	}
+	return FindMin(current->right);
+}
+
+int FindMin1(BstNode*& root)
+{
+	if (IsEmpty(root))
+	{
+		printf("Tree is empty!\n");
+		return -1;
+	}
+	BstNode* current = root;
+	while (NULL != current->left)
+	{
+		current = current->left;
+	}
+	return current->data;
+}
+ 
+int FindMax1(BstNode*& root)
+{
+	if (IsEmpty(root)) return -1;
+	BstNode* current = root;
+	while (NULL != current->right)
+	{
+		current = current->right;
+	}
+	return current->data;
+}
+int TreeHeight(BstNode*& root)
+{
+	if (root == NULL) 
+	{
+		return -1;  // 空树的高度为 -1，约定高度从 0 开始
+	}
+
+	int leftHeight = TreeHeight(root->left);
+	int rightHeight = TreeHeight(root->right);
+
+	return std::max(leftHeight, rightHeight) + 1;
+}

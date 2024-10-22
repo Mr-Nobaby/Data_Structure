@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-
+#include <algorithm> 
 struct BstNode
 {
 	int data;
@@ -16,3 +16,12 @@ void TreeInsert1(BstNode*& root, int x); //非递归方法
 
 bool IsEmpty(BstNode*& root);
 bool NodeSearch(BstNode*& root, int x); 
+
+//递归方法
+int FindMin(BstNode*& root);
+int FindMax(BstNode*& root);
+//非递归方法
+int FindMin1(BstNode*& root);
+int FindMax1(BstNode*& root);
+
+int TreeHeight(BstNode*& root);
