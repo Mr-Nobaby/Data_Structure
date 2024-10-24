@@ -36,7 +36,16 @@ void test2()
 
 void test3()
 {
-	
+	BstNode* root = NULL;
+
+	TreeInsertString(root, 'm');
+	TreeInsertString(root, 'b');
+	TreeInsertString(root, 'q');
+	TreeInsertString(root, 'a');
+	TreeInsertString(root, 'c');
+	TreeInsertString(root, 'z');
+
+	LevelOrder(root);
 }
 
 void test4()
@@ -55,6 +64,7 @@ void test6()
 int main()
 {
 	//test1();
-	test2();
+	//test2();
+	test3();
 }
 

@@ -1,4 +1,5 @@
 #include "Binary_Search_Tree.h"
+using namespace std;
 
 BstNode* CreatNewNode(int x)
 {
@@ -7,6 +8,15 @@ BstNode* CreatNewNode(int x)
 	temp->left = temp->right = NULL;
 	return temp;
 }
+
+BstNode* CreatNewNodeString(char x)
+{
+	BstNode* temp = new BstNode;
+	temp->character = x;
+	temp->left = temp->right = NULL;
+	return temp;
+}
+
 
 bool IsEmpty(BstNode*& root)
 {
@@ -60,7 +70,23 @@ BstNode* TreeInsert(BstNode*& root, int x)
 
 	}
 	return root;
-  
+}
+
+BstNode* TreeInsertString(BstNode*& root, char x)
+{
+	if (IsEmpty(root))
+	{
+		root = CreatNewNodeString(x);
+	}
+	else if (x <= root->character)
+	{
+		TreeInsertString(root->left, x);
+	}
+	else
+	{
+		TreeInsertString(root->right, x);
+	}
+	return root;
 }
 
 bool NodeSearch(BstNode*& root, int x)
@@ -98,7 +124,7 @@ int FindMax(BstNode*& root)
 	{
 		return current->data;
 	}
-	return FindMin(current->right);
+	return FindMax(current->right);
 }
 
 int FindMin1(BstNode*& root)
@@ -137,4 +163,20 @@ int TreeHeight(BstNode*& root)
 	int rightHeight = TreeHeight(root->right);
 
 	return std::max(leftHeight, rightHeight) + 1;
+}
+
+void LevelOrder(BstNode*& root)
+{
+	if (IsEmpty(root)) return;
+	queue<BstNode*> q;
+	q.push(root);
+	while (!q.empty())
+	{
+		BstNode* current = q.front();
+		q.pop();
+		cout << current->character << " ";
+		if (current->left) q.push(current->left);
+		if (current->right) q.push(current->right);
+	}
+	cout << endl;
 }
