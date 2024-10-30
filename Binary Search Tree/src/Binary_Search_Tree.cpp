@@ -180,3 +180,66 @@ void LevelOrder(BstNode*& root)
 	}
 	cout << endl;
 }
+
+void PreOrder(BstNode*& root)
+{
+	if (root == NULL) return;
+	printf("%c ", root->data);
+	PreOrder(root->left);
+	PreOrder(root->right);
+}
+
+void InOrder(BstNode*& root)
+{
+	if (root == NULL) return;
+	PreOrder(root->left);
+	printf("%c ", root->data);
+	PreOrder(root->right);
+}
+void PostOrder(BstNode*& root)
+{
+	if (root == NULL) return;
+	PreOrder(root->left);
+	PreOrder(root->right);
+	printf("%c ", root->data);
+}
+bool IsSubtreeLesser(BstNode*& root, int val)
+{
+	if (NULL == root) return true;
+	if (root->data <= val
+		&& IsSubtreeLesser(root->left, val)
+		&& IsSubtreeLesser(root->right, val))return true;
+	return false;
+}
+bool IsSubtreeGreater(BstNode*& root, int val)
+{
+	if (NULL == root) return true;
+	if (root->data > val
+		&& IsSubtreeGreater(root->left, val)
+		&& IsSubtreeGreater(root->right, val))return true;
+	return false;
+}
+
+bool IsBinarySearchTree(BstNode*& root)
+{
+	if (NULL == root) return true;
+	if (IsSubtreeLesser(root->left, root->data)
+		&& IsSubtreeGreater(root->right, root->data)
+		&& IsBinarySearchTree(root->left)
+		&& IsBinarySearchTree(root->right)) return true;
+	return false;  
+}
+
+bool IsBinarySearchTreeUtil(BstNode*& root, int max, int min)
+{
+	if (NULL == root) return true;
+	if (root->data > min
+		&& root->data < max
+		&& IsBinarySearchTree1(root->left, min, root->data)
+		&& IsBinarySearchTree1(root->right, root->data, max)) return true;
+	return false;
+}
+bool IsBinarySearchTree1(BstNode*& root)
+{
+	return IsBinarySearchTreeUtil(root, INT_MAX, INT_MIN);
+}

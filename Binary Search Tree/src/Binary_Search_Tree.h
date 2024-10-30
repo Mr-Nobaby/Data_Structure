@@ -35,3 +35,14 @@ int FindMax1(BstNode*& root);
 
 int TreeHeight(BstNode*& root);
 void LevelOrder(BstNode*& root);
+
+void PreOrder(BstNode*& root);
+void InOrder(BstNode*& root);
+void PostOrder(BstNode*& root);
+
+bool IsBinarySearchTree(BstNode*& root);
+bool IsSubtreeLesser(BstNode*& root, int val);
+bool IsSubtreeGreater(BstNode*& root, int val);
+bool IsBinarySearchTree1(BstNode*& root);
+bool IsBinarySearchTreeUtil(BstNode*& root, int max, int min);  
+
