@@ -1,2 +1,2 @@
 ﻿  Binary_Search_Tree.cpp
-  Binary Search Tree.vcxproj -> C:\Users\Administrator\Desktop\data structure code\Binary Search Tree\Debug\Binary Search Tree.exe
+C:\Users\Administrator\Desktop\data structure code\Binary Search Tree\src\Binary_Search_Tree.cpp(250,1): error C4716: “NodeDelete”: 必须返回一个值

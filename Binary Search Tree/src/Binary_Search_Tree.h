@@ -20,6 +20,7 @@ BstNode* CreatNewNodeString(char x);
 
 BstNode* TreeInsert(BstNode*& root, int x);//递归方法
 BstNode* TreeInsertString(BstNode*& root, char x);
+BstNode* NodeDelete(BstNode*& root, int x);
 
 void TreeInsert1(BstNode*& root, int x); //非递归方法
 
@@ -27,7 +28,7 @@ bool IsEmpty(BstNode*& root);
 bool NodeSearch(BstNode*& root, int x); 
 
 //递归方法
-int FindMin(BstNode*& root);
+BstNode* FindMin(BstNode*& root);
 int FindMax(BstNode*& root);
 //非递归方法
 int FindMin1(BstNode*& root);

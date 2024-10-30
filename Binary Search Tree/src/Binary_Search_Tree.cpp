@@ -97,17 +97,17 @@ bool NodeSearch(BstNode*& root, int x)
 	else return NodeSearch(root->right, x);
 }
 
-int FindMin(BstNode*& root)
+BstNode* FindMin(BstNode*& root)
 {
 	BstNode* current = root;
 	if (IsEmpty(root))
 	{
 		printf("Tree is empty!\n");
-		return -1;
+		return NULL;
 	}
 	else if (current->left == NULL)
 	{
-		return current->data;
+		return current;
 	}
 	return FindMin(current->left);
 }
@@ -230,16 +230,60 @@ bool IsBinarySearchTree(BstNode*& root)
 	return false;  
 }
 
-bool IsBinarySearchTreeUtil(BstNode*& root, int max, int min)
+bool IsBinarySearchTreeUtil(BstNode*& root, int min, int max)
 {
 	if (NULL == root) return true;
 	if (root->data > min
 		&& root->data < max
-		&& IsBinarySearchTree1(root->left, min, root->data)
-		&& IsBinarySearchTree1(root->right, root->data, max)) return true;
+		&& IsBinarySearchTreeUtil(root->left, min, root->data)
+		&& IsBinarySearchTreeUtil(root->right, root->data, max)) return true;
 	return false;
 }
 bool IsBinarySearchTree1(BstNode*& root)
 {
 	return IsBinarySearchTreeUtil(root, INT_MAX, INT_MIN);
+}
+
+BstNode* NodeDelete(BstNode*& root, int x)
+{
+	if (NULL == root) return root;
+	else if (x < root->data) 
+	{
+		root->left = NodeDelete(root->left, x);
+	}
+	else if(x > root->data) 
+	{
+		root->right = NodeDelete(root->right, x);
+	}
+	else//Found data
+	{
+		//1.No child 
+		if (root->left == NULL && root->right == NULL)
+		{
+			delete root;
+			root = NULL;
+			return root;
+		}
+		//2.One child
+		else if (root->left == NULL)
+		{
+			BstNode* temp = root;
+			root = root->right;
+			delete temp;
+		}
+		else if (root->right == NULL)
+		{
+			BstNode* temp = root;
+			root = root->left;
+			delete temp;
+		}
+		//Twe children
+		else
+		{
+			BstNode* temp = FindMin(root->right);
+			root->data = temp->data;
+			root->right = NodeDelete(root->right, temp->data); 
+		}
+	}
+	return root;
 }
